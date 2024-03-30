@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    transition: 5s;
+    background-position: center;
+
+    animation-name: animation;
+    animation-direction: alternate-reverse;
+    animation-duration: 25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.register a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    background: #e67e22;
+}
+.register a:hover{
+    border: 1px solid indianred;
+    background: transparent;
+}
+
+.h-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 650px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.h-text span{
+    letter-spacing: 5px;
+}
+.h-text h1{
+    font-size: 3.5em;
+}
+.h-text a{
+    text-decoration: none;
+    background: indianred;
+    padding: 10px 20px;
+    color: #fff;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+.h-text a:hover{
+    border: 1px solid indianred;
+    background: transparent;
+}
+
+nav .menu a{
+    color: #fff;
+    margin-left: 80px;
+    position: relative;
+}
+nav .menu a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #dd0707;
+    transition: 0.4s;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background:linear-gradient(rgba(0,0,0,0.7) 68%,#e67e22);
+}
+header nav .logo{
+    width: 150px;
+}
+header nav .menu{
+    display: flex;
+    align-items: center;
+}
+
+nav .menu a:hover::after{
+    width: 100%;
+}
+
+.h-text a{
+    text-decoration: none;
+    color: white;
+    background: #e67e22;
+    padding: 10px 20px;
+    margin: 0 15px;
+    letter-spacing: 5px;
+
+}
+
